@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	ios::sync_with_stdio(false);
+	cin.tie(0); cout.tie(0);
+
+	int i, j, N; cin >> N;
+
+	for (i = 1; i <= N; i++) {
+		int SPC = N - i;
+
+		for (j = 1; j <= SPC; j++) cout << " ";
+		for (j = 1; j <= i; j++) cout << "* ";
+		cout << "\n";
+	}
+
+	return 0;
+}
